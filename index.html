@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/Thema-app2.min.css"/>
+<!--<link rel="stylesheet" href="css/jquery-mobile.icons-1.4.5.min.css"/>
+<link rel=""stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>-->
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/smtf.jpg','imagenes/gamab2.jpg','imagenes/gamaa2.jpg','imagenes/tea1.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Telefonia celular</h1>
+</div>
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Que es un telefono celular?</h2>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Historia de la telefonia celular</h2>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Clasificacion de la telefonia celular</h2>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Compañias que maneja la telefonia celular en mexico</h2>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Telefonos celulares del futuro</h2>
+</a>
+</li>
+</ul>
+</div>
+
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/persona_azul.jpg" width="46" height="46">
+</div>
+<div>
+<h4>Aplicacion 	Dos</h4>
+<h4>Luis Jacobo Rosales Velazco</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Que es un telefono celular?</h1>
+
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Se conoce como celular al dispositivo inalámbrico electrónico que está preparado para tener acceso a la telefonía celular, también conocida como móvil.</h2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Celulares</h1>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','imagenes/smtf.jpg',1)"><img src="imagenes/Telefono.jpg" width="50%" height="50%" id="Image2"></a>
+</div>
+<div></div>
+</div>
+</div>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, RVLJ</h4>
+</div>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1 align="center">Historia de la telefonia celular</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>
+<p>Tres años más tarde los soldados norteamericanos llevaron el antecesor del celular al campo de batalla. La compañía Motorola especializada en la fabricación de radios de doble vía, presenta su transmisor del mismo nombre, que permitía tener comunicadas las tropas en la segunda guerra mundial. </p>
+
+<p>Al terminar la guerra el monopolio de comunicaciones AT&T, tomó concepto del transmisor de Motorola y lo llevó al automóvil, pero este tenía limitantes.</p>
+
+<p>La telefonía móvil o celular se conoce desde mediados del siglo XX, aunque no fue hasta los años setenta que poco a poco comenzó a extenderse, primeramente a precios muy altos y con equipos rudimentarios.</p>
+
+<p>En 1947, AT&T ideó un novedoso sistema, basado en muchos transmisores pequeños y formar con ellos una red, en lugar de un potente transmisor ubicado en una altura. Para la consecución de este objetivo la AT&T solicitó a la Comisión Federal de Comunicaciones (FCC), un permiso para desarrollar el sistema de telefonía móvil, esta solicitud fue denegada.</p>
+
+<p>En 1973 la FCC, estaba a punto de otorgarle a AT&T el monopolio del sistema celular. Motorola ve que ella puede entrar en este mercado, ya que conocía el negocio de las comunicaciones personales y convoca a sus trabajadores a un concurso para que en seis semanas presenten un prototipo de teléfono portátil. </p>
+
+<p>El 3 de abril de 1973, Marty Cooper vicepresidente de Investigación y Desarrollo de Motorola en ese entonces, hace una llamada telefónica a Joel Engel, ingeniero jefe de AT&T y propulsor de la telefonía celular, utilizando el prototipo desarrollado por su compañía, certificándose de esta manera el nacimiento del teléfono celular.</p>
+
+<p>En marzo del 1981 el presidente de Motorola comienza hacer gestiones con las más altas esferas del Gobierno de los Estados Unidos, hasta presentarle el prototipo a Ronald Reagan entonces presidente del país, este ve las ventajas del sistema y presiona a la FCC para autorización del servicio. Quedando AT&T con el servicio y Motorola con los equipos.</p>
+
+<p>Desde entonces la constante investigación en este campo ha propiciado el desarrollo de baterías más pequeñas y de mayor duración, pantallas más nítidas y de colores, la incorporación de software más amigable y multiplicidad de formatos de teléfonos y de funciones agregadas a este, lo cual ha hecho que muchos crean que se trata del dispositivo del siglo XXI.</p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Historia</h1>
+
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/tea1.jpg',1)"><img src="imagenes/att.jpg" width="50%" height="50%" id="Image"></a> </h2>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4 align="center">Aplicacion Dos RVLJ </h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Clasificacion de la telefonia celular</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2> 
+<p>CELULARES DE GAMA BAJA
+<p>Bajo este nombre se identifican a aquellos teléfonos móviles que cuentan si bien cuentan con una cámara de fotos, esta es de baja calidad. Además de esto, incluyen un reproductor de música aunque de los más básicos, al igual que la memoria que presentan, que es bastante limitada. Los celulares de baja gama tampoco incluyen pantalla táctil y ésta suele ser de tamaño reducido.</p></p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Gama baja</h1>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/gamab2.jpg',1)"><img src="imagenes/gamab1.png" width="50%" height="50%" id="Image6"></a>
+<div></div>
+</div>
+
+<p>CELULARES DE GAMA MEDIA</p>
+<p>Estos celulares, en cambio, ofrecen pantallas un poco más grandes que los anteriores, por lo que su calidad es bastante mayor y resultan mucho más prácticas para los usuarios. Además de esto, la cámara de fotos que tienen es de mayor calidad, al igual que los reproductores de MP3. Estos teléfonos móviles también ofrecen juegos, mensaje de texto, calculadora y distintas aplicaciones.</p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Gama media</h1>
+<img src="imagenes/gamam1.jpg" width="50%" height="50%">
+</div>
+</div>
+</div>
+
+
+<p>CELULARES DE GAMA ALTA</p>
+<p>Los teléfonos móviles de alta gama ofrecen varias de las opciones antes mencionadas, pero con mejor calidad, como ocurre con la cámara de fotos o el reproductor de música. Además de esto, la conexión a Internet suele ser de mejor calidad y velocidad y ofrecen 3G. Además, cuentan con Bluetooth y como permiten conexión Wi Fi muchas veces no se venden con planes de Internet.</p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Gama alta</h1>
+<img src="imagenes/gamaa.jpg" width="50%" height="50%" alt="img1">
+<div></div>
+</div>
+
+</h2>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, RVLJ</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Compañias que maneja la telefonia celular en mexico</h1>
+</div>
+<div data-role="content" align="center">
+</div>
+<h2>
+<p>La consolidación y reconfiguración de los operadores móviles en México ha motivado una competencia más agresiva por parte de las compañías. Un reporte de la firma de análisis OpenSignal nos dice cuál tiene mejor desempeño.</p>
+<p>AT&T es el operador con mejor desempeño en términos generales, por encima de Movistar y Telcel, según el reporte Estado de las redes Móviles: México, realizado por la firma de análisis británica Open Signal.</p>
+
+<p>El último año ha sido uno agitado para el sector de las telecomunicaciones en México. Por un lado, AT&T llegó con fuerza al mercado, absorbiendo a Iusacell, Nextel y Unefon para crear el primer bloque norteamericano que va desde Canadá hasta nuestro país. Por otra parte, Telcel intenta reducir su tamaño para cumplir con la regulación vigente.</p>
+
+<p>Esa consolidación y reconfiguración del sector ha fomentado la competencia en nuestro país. Así, OpenSignal señala que aunque Telcel es el operador líder en términos de cobertura (atiende a 70% de todos los operadores móviles), AT&T ya ofrece conexión 4G y tiene a más 44 millones de suscriptores. Movistar, por su parte, aún está rezagada frente a los dos grandes competidores en todas las métricas analizadas por la firma.</p>
+
+<p>Entre los principales hallazgos de OpenSignal se encuentran:</p>
+
+<p>La cobertura de 4G es (muy) intermitente. Los usuarios de Telcel tienen acceso a la red LTE sólo 64.92% del tiempo, no obstante, la operadora propiedad de Carlos Slim lleva la delantera a AT&T (61.63%) y Movistar (54.63%).</p>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Mejor red</h1>
+<img src="imagenes/manejotele.png" width="50%" height="50%" alt="2">
+</h2>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4 align="center">Aplicacion Dos, RVLJ</h4>
+</div>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Telefonos celulares del futuro</h1>
+</div>
+<div data-role="content" align="center">
+</div>
+<h2 align="center"> 
+
+<p>Los celulares se han convertido en parte esencial de nuestra vida cotidiana, tanto así que no concebimos salir sin ellos y menos convivir sin las nuevas aplicaciones que estos dispositivos traen.</p>
+ 
+<p>Actualmente existen varios prototipos de celulares que aún no han salido al mercado, pero resultan tan espectaculares que sin duda, vale la pena conocer.</p>
+
+<h3 align="center">NOKIA MORPH 4 </h3>
+
+<p>Nokia junto a la Universidad de Cambridge crearon un celular moldeable vía nanotecnología, denominado “Morph”.</p>
+ 
+<p>Este celular es como salido de una película futurista. Lo más sorprendente es su increíble capacidad de moldearse en diferentes formas. Entre otro de sus atractivos destaca además su gran panel para ver videos.</p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Nokia Morph 4 </h1>
+
+<img src="imagenes/morf.jpg" width="50%" height="50%" align="middle"> 
+</div>
+</div>
+
+<h3 align="center"> BLACK BOX </h3>
+
+<P>Modelo que pertenece a BenQ-Siemens y que ha sido catalogado de impresionante, porque incorpora tecnología touch, como medio de navegación, tanto en la panatalla como en todo el cuerpo del dispositivo. </P>
+ 
+<P>Al parecer la interfaz será bastante sencilla de utilizar. Pero esta maravilla tardará un poco en ver la luz, ya que aún no tiene fecha de lanzamiento.</P>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Black box</h1>
+<img src="imagenes/blackbox.jpg" width="%50" height="50%" align="middle"> 
+</h2>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicacion Dos,RVLJ</h4>
+</div>
+</div>
+</body>
+</html>
