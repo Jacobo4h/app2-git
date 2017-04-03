@@ -34,9 +34,9 @@
    <!--Third party plugins -->
    
    <!--Para accesar a paginas en internet-->
-   <allow-intent href="https://*/*"7>
+   <allow-intent href="https://*/*"/>
    <aaces orifin="https://*/*"/>
-   <allow-intent href="http://*/*"7>
+   <allow-intent href="http://*/*"/>
    <aaces orifin="http://*/*"/>
    <plugin name="cordova-plugin-whitelist" source="npm"/>
    
